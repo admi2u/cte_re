@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package datasets;
+
+option go_package = "./datasets";
+
+message DatasetCreateReq {
+  string name = 1;
+  string title = 2;
+  string summary = 3;
+  string description = 4;
+  string tags = 5;
+  int64 dataset_size = 6;
+  string dataset_type = 7;
+}
+
+message DatasetCreateResp {
+  int64 id = 1;
+}
+
+message DatasetListReq {
+  int64 page = 1;
+  int64 page_size = 2;
+}
+
+message DatasetListData {
+  int64 id = 1;
+  string name = 2;
+  string title = 3;
+  string summary = 4;
+  string description = 5;
+  string tags = 6;
+  int64 dataset_size = 7;
+  string dataset_type = 8;
+  string create_at = 9;
+  string update_at = 10;
+}
+
+message DatasetListResp {
+  int64 total = 1;
+  repeated DatasetListData datasets = 2;
+}
+
+service datasets {
+  rpc datasetCreate(DatasetCreateReq) returns (DatasetCreateResp);
+  rpc datasetList(DatasetListReq) returns (DatasetListResp);
+}

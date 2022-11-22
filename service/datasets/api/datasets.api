@@ -1,0 +1,54 @@
+syntax = "v1"
+
+type (
+	Dataset {
+		Id          string `json:"id"`
+		Name        string `json:"name"`
+		Title       string `json:"title"`
+		Summary     string `json:"summary"`
+		Description string `json:"description"`
+		Tags        string `json:"tags"`
+		DatasetSize int64  `json:"dataset_size"`
+		DatasetType string `json:"dataset_type"`
+		CreateAt    string `json:"create_at"`
+		UpdateAt    string `json:"update_at"`
+	}
+
+	DatasetCreateRequest {
+		Name        string `json:"name"`
+		Title       string `json:"title"`
+		Summary     string `json:"summary"`
+		Description string `json:"description"`
+		Tags        string `json:"tags"`
+		DatasetSize int64  `json:"dataset_size"`
+		DatasetType string `json:"dataset_type"`
+	}
+
+	DatasetCreateResponse {
+		Id int64 `json:"id"`
+	}
+
+	DatasetListRequest {
+		Page     int64 `json:"page"`
+		PageSize int64 `json:"page_size"`
+	}
+
+	DatasetListResponse {
+		Datasets []*Dataset `json:"datasets"`
+	}
+)
+
+@server (
+	group: datasets
+	prefix: api/v1
+)
+
+service datasets-api {
+	@doc "create dataset"
+	@handler datasetCreate
+	post /dataset (DatasetCreateRequest) returns (DatasetCreateResponse)
+	
+	@doc "list datasets"
+	@handler datasetsList
+	get /datasets (DatasetListRequest) returns (DatasetListResponse)
+}
