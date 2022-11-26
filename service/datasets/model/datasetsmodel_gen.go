@@ -113,7 +113,7 @@ func (m *defaultDatasetsModel) GetPageList(ctx context.Context, page, pageSize i
 		page = 1
 	}
 	dataOffset := (page - 1) * pageSize
-	query := fmt.Sprintf("select %s from %s limit %d offset %d", datasetsRows, m.table, page, dataOffset)
+	query := fmt.Sprintf("select %s from %s limit %d offset %d", datasetsRows, m.table, pageSize, dataOffset)
 	var resp []*Datasets
 	err := m.conn.QueryRowsCtx(ctx, &resp, query)
 	switch err {

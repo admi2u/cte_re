@@ -15,13 +15,13 @@ type Dataset struct {
 }
 
 type DatasetCreateRequest struct {
-	Name        string `json:"name"`
-	Title       string `json:"title"`
-	Summary     string `json:"summary"`
-	Description string `json:"description"`
-	Tags        string `json:"tags"`
-	DatasetSize int64  `json:"dataset_size"`
-	DatasetType string `json:"dataset_type"`
+	Name        string `form:"name"`
+	Title       string `form:"title"`
+	Summary     string `form:"summary"`
+	Description string `form:"description"`
+	Tags        string `form:"tags"`
+	DatasetSize int64  `form:"dataset_size"`
+	DatasetType string `form:"dataset_type"`
 }
 
 type DatasetCreateResponse struct {
@@ -34,6 +34,6 @@ type DatasetListRequest struct {
 }
 
 type DatasetListResponse struct {
-	Total    int64      `json:"total"`
+	Total    int64
 	Datasets []*Dataset `json:"datasets"`
 }

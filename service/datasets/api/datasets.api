@@ -2,7 +2,7 @@ syntax = "v1"
 
 type (
 	Dataset {
-		Id          string `json:"id"`
+		Id          int64 `json:"id"`
 		Name        string `json:"name"`
 		Title       string `json:"title"`
 		Summary     string `json:"summary"`
@@ -15,13 +15,13 @@ type (
 	}
 
 	DatasetCreateRequest {
-		Name        string `json:"name"`
-		Title       string `json:"title"`
-		Summary     string `json:"summary"`
-		Description string `json:"description"`
-		Tags        string `json:"tags"`
-		DatasetSize int64  `json:"dataset_size"`
-		DatasetType string `json:"dataset_type"`
+		Name        string `form:"name"`
+		Title       string `form:"title"`
+		Summary     string `form:"summary"`
+		Description string `form:"description"`
+		Tags        string `form:"tags"`
+		DatasetSize int64  `form:"dataset_size"`
+		DatasetType string `form:"dataset_type"`
 	}
 
 	DatasetCreateResponse {
@@ -29,8 +29,8 @@ type (
 	}
 
 	DatasetListRequest {
-		Page     int64 `json:"page"`
-		PageSize int64 `json:"page_size"`
+		Page     int64 `form:"page"`
+		PageSize int64 `form:"page_size"`
 	}
 
 	DatasetListResponse {
