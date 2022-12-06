@@ -2,11 +2,11 @@ package datasets
 
 import (
 	"context"
-	"cte_re/service/datasets/rpc/datasets"
+	"datasets/rpc/datasets"
 	"github.com/jinzhu/copier"
 
-	"cte_re/service/datasets/api/internal/svc"
-	"cte_re/service/datasets/api/internal/types"
+	"datasets/api/internal/svc"
+	"datasets/api/internal/types"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

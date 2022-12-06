@@ -6,9 +6,9 @@ package server
 import (
 	"context"
 
-	"cte_re/service/datasets/rpc/datasets"
-	"cte_re/service/datasets/rpc/internal/logic"
-	"cte_re/service/datasets/rpc/internal/svc"
+	"datasets/rpc/datasets"
+	"datasets/rpc/internal/logic"
+	"datasets/rpc/internal/svc"
 )
 
 type DatasetsServer struct {

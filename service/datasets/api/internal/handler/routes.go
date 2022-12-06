@@ -4,8 +4,8 @@ package handler
 import (
 	"net/http"
 
-	datasets "cte_re/service/datasets/api/internal/handler/datasets"
-	"cte_re/service/datasets/api/internal/svc"
+	datasets "datasets/api/internal/handler/datasets"
+	"datasets/api/internal/svc"
 
 	"github.com/zeromicro/go-zero/rest"
 )

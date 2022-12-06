@@ -1,8 +1,8 @@
 package svc
 
 import (
-	"cte_re/service/datasets/model"
-	"cte_re/service/datasets/rpc/internal/config"
+	"datasets/model"
+	"datasets/rpc/internal/config"
 	"github.com/zeromicro/go-zero/core/stores/sqlx"
 )
 

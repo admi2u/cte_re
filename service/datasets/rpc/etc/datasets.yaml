@@ -2,7 +2,7 @@ Name: datasets.rpc
 ListenOn: 0.0.0.0:7001
 Etcd:
   Hosts:
-  - 127.0.0.1:2379
+  - 172.17.42.75:2379
   Key: datasets.rpc
 DB:
-  DataSource: postgres://cte_re_dev:cte_re_dev@127.0.0.1:5432/cte_re
+  DataSource: postgres://cte_re_dev:cte_re_dev@172.17.42.75:5432/cte_re

@@ -2,10 +2,10 @@ package logic
 
 import (
 	"context"
-	"cte_re/service/datasets/model"
+	"datasets/model"
 
-	"cte_re/service/datasets/rpc/datasets"
-	"cte_re/service/datasets/rpc/internal/svc"
+	"datasets/rpc/datasets"
+	"datasets/rpc/internal/svc"
 
 	"github.com/jinzhu/copier"
 	"github.com/zeromicro/go-zero/core/logx"

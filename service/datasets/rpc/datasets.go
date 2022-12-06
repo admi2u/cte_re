@@ -4,10 +4,10 @@ import (
 	"flag"
 	"fmt"
 
-	"cte_re/service/datasets/rpc/datasets"
-	"cte_re/service/datasets/rpc/internal/config"
-	"cte_re/service/datasets/rpc/internal/server"
-	"cte_re/service/datasets/rpc/internal/svc"
+	"datasets/rpc/datasets"
+	"datasets/rpc/internal/config"
+	"datasets/rpc/internal/server"
+	"datasets/rpc/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/core/service"

@@ -6,7 +6,7 @@ package datasetsclient
 import (
 	"context"
 
-	"cte_re/service/datasets/rpc/datasets"
+	"datasets/rpc/datasets"
 
 	"github.com/zeromicro/go-zero/zrpc"
 	"google.golang.org/grpc"

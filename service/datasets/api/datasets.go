@@ -4,9 +4,9 @@ import (
 	"flag"
 	"fmt"
 
-	"cte_re/service/datasets/api/internal/config"
-	"cte_re/service/datasets/api/internal/handler"
-	"cte_re/service/datasets/api/internal/svc"
+	"datasets/api/internal/config"
+	"datasets/api/internal/handler"
+	"datasets/api/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/rest"

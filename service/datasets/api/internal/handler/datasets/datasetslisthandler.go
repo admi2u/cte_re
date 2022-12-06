@@ -1,11 +1,11 @@
 package datasets
 
 import (
-	"cte_re/service/datasets/api/internal/types"
+	"datasets/api/internal/types"
 	"net/http"
 
-	"cte_re/service/datasets/api/internal/logic/datasets"
-	"cte_re/service/datasets/api/internal/svc"
+	"datasets/api/internal/logic/datasets"
+	"datasets/api/internal/svc"
 	"github.com/zeromicro/go-zero/rest/httpx"
 )
 

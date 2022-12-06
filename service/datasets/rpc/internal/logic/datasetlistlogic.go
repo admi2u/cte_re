@@ -2,8 +2,8 @@ package logic
 
 import (
 	"context"
-	"cte_re/service/datasets/rpc/datasets"
-	"cte_re/service/datasets/rpc/internal/svc"
+	"datasets/rpc/datasets"
+	"datasets/rpc/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

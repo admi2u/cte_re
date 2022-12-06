@@ -1,8 +1,8 @@
 package svc
 
 import (
-	"cte_re/service/datasets/api/internal/config"
-	"cte_re/service/datasets/rpc/datasetsclient"
+	"datasets/api/internal/config"
+	"datasets/rpc/datasetsclient"
 	"github.com/zeromicro/go-zero/zrpc"
 )
 
